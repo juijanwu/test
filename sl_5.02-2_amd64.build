@@ -1,0 +1,17 @@
+ dpkg-buildpackage -us -uc -ui -T clean
+dpkg-buildpackage: warning:     debian/changelog(l3): unrecognized line
+LINE:  add testing.sh
+dpkg-buildpackage: warning:     debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 12:57:15 +0100
+dpkg-buildpackage: info: source package sl
+dpkg-buildpackage: info: source version 5.02-2
+dpkg-buildpackage: info: source distribution focal
+dpkg-buildpackage: info: source changed by brandenwu <raranhot@hotmail.com>
+ debian/rules clean
+dh clean
+   dh_auto_clean
+	make -j1 distclean
+make[1]: Entering directory '/home/branden/temp/test1/sl-5.02'
+rm -f sl
+make[1]: Leaving directory '/home/branden/temp/test1/sl-5.02'
+   dh_clean

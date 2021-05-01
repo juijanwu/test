@@ -1,0 +1,73 @@
+ dpkg-buildpackage -us -uc -ui -S
+dpkg-buildpackage: warning:     debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-buildpackage: warning:     debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+dpkg-buildpackage: info: source package sl
+dpkg-buildpackage: info: source version 5.02-3
+dpkg-buildpackage: info: source distribution focal
+dpkg-buildpackage: info: source changed by brandenwu <raranhot@hotmail.com>
+ dpkg-source --before-build .
+dpkg-source: warning: sl-5.02/debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-source: warning: sl-5.02/debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+ debian/rules clean
+dh clean
+   dh_auto_clean
+	make -j1 distclean
+make[1]: Entering directory '/home/branden/temp/test1/sl-5.02'
+rm -f sl
+make[1]: Leaving directory '/home/branden/temp/test1/sl-5.02'
+   dh_clean
+ dpkg-source -b .
+dpkg-source: warning: sl-5.02/debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-source: warning: sl-5.02/debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building sl using existing ./sl_5.02.orig.tar.gz
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: warning: sl-5.02/debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-source: warning: sl-5.02/debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+dpkg-source: info: building sl in sl_5.02-3.debian.tar.xz
+dpkg-source: info: building sl in sl_5.02-3.dsc
+ dpkg-genbuildinfo --build=source
+dpkg-genbuildinfo: warning:     debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-genbuildinfo: warning:     debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+dpkg-genbuildinfo: warning:     debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-genbuildinfo: warning:     debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+dpkg-genbuildinfo: warning:     debian/changelog(l9): unrecognized line
+LINE:  add testing.sh
+dpkg-genbuildinfo: warning:     debian/changelog(l11): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 01:01:15 +0100
+ dpkg-genchanges --build=source >../sl_5.02-3_source.changes
+dpkg-genchanges: warning:     debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-genchanges: warning:     debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+dpkg-genchanges: warning:     debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-genchanges: warning:     debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+dpkg-genchanges: warning:     debian/changelog(l9): unrecognized line
+LINE:  add testing.sh
+dpkg-genchanges: warning:     debian/changelog(l11): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 01:01:15 +0100
+dpkg-genchanges: info: not including original source code in upload
+ dpkg-source --after-build .
+dpkg-source: warning: sl-5.02/debian/changelog(l3): unrecognized line
+LINE:  cp testing.sh /usr/bin
+dpkg-source: warning: sl-5.02/debian/changelog(l5): found trailer where expected start of change data
+LINE:  -- brandenwu <raranhot@hotmail.com>  Sat, 01 May 2021 02:01:15 +0100
+dpkg-buildpackage: info: binary and diff upload (original source NOT included)
+Now running lintian sl_5.02-3_source.changes ...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: sl source: package-uses-deprecated-debhelper-compat-version 9
+Finished running lintian.

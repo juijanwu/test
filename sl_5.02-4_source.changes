@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 01 May 2021 03:01:15 +0100
+Source: sl
+Architecture: source
+Version: 5.02-4
+Distribution: focal
+Urgency: medium
+Maintainer: Markus Frosch <lazyfrosch@debian.org>
+Changed-By: brandenwu <raranhot@hotmail.com>
+Changes:
+ sl (5.02-4) focal; urgency=medium
+Checksums-Sha1:
+ bf9f91b41c9cf1ed59e744bc881e91debfb2b3bc 1460 sl_5.02-4.dsc
+ 859e81f600f4b192e89da72017162677ff759cbe 14696 sl_5.02-4.debian.tar.xz
+ 04f679e28ee6da371020e74ccb152725eaae82b1 5854 sl_5.02-4_source.buildinfo
+Checksums-Sha256:
+ dc4692fee53bbd15125a80acd416ad60fcf4e0d149b86eb63283532da9ab6567 1460 sl_5.02-4.dsc
+ 80fe1d90df9a8e08e79ae705f66e46f5d00644139677d1dcf009079a508e01eb 14696 sl_5.02-4.debian.tar.xz
+ e686a1bdfe1f9c374e7977afcbe22d9b7eabf6b9d2657736db377d8439c8106f 5854 sl_5.02-4_source.buildinfo
+Files:
+ deded933f8f2aa986a860c825c705634 1460 games optional sl_5.02-4.dsc
+ 6c6f8b679f6eb536b99c2c9f9c203993 14696 games optional sl_5.02-4.debian.tar.xz
+ 487ffa47022744d17a48a3b913afbd01 5854 games optional sl_5.02-4_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCgAdFiEECpvH+TEZjMkP8vkek3oOrn9AFcUFAmCMYUkACgkQk3oOrn9A
+FcUh4QgAjtbPRd7H+MjaUCTFZXEK+EYr9YW/5uj8GrSlkSrqVuc9soDGEP/pi39+
+ihnCut+sbsv+cSUKLBqnx+BdrG325PbrzRRxPEGky+HWjCzzG0/3iUCPjwPuCXMk
+e9llEyW+xQ8W8bGXA9Y1JTEEpRXF2hTfRPyJvjeCbhma0xnMc9ENAhSvI1WxXMNS
+hk/oS9z/SvOGwqJ2nCGQ40hMV03vq9flrrvvcSshNqyvyB9xCJcZYQ5ylXq8no7A
+TeA3e+ANnYnxPaRMpdGD2CBlyy77xB8X3lfGw+X6YO86HreimAEPie8P33RQBvxT
+wwCHOkvG53SDqeM6dlsOrJkJrP43uA==
+=xGJT
+-----END PGP SIGNATURE-----
